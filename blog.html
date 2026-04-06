@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights & News - ITMeet</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+    <a href="index.html" class="logo">
+        <img src="assets/stack logo.png" alt="logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-outline" style="margin-left:10px; padding: 6px 16px;">Login</a>
+        <a href="signup.html" class="btn-primary" style="padding: 6px 16px;">Sign Up</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- 1. Page Header -->
+  <section class="page-header" id="header">
+    <div class="container text-center reveal">
+      <h1>Tech Insights & Perspectives</h1>
+      <p>Expert analysis, future trends, and engineering best practices.</p>
+    </div>
+  </section>
+
+  <!-- 2. Featured Article -->
+  <section class="featured-article" id="featured">
+    <div class="container reveal">
+      <div class="featured-card">
+        <img src="https://picsum.photos/800/500?random=14" alt="Featured Article" class="featured-img">
+        <div class="featured-content">
+          <span class="badge">Featured</span>
+          <h2>The Anatomy of a Modern Microservice Architecture</h2>
+          <p>Explore the intricate details behind building, deploying, and scaling microservices using Kubernetes and Istio service meshes.</p>
+          <div class="meta">
+            <div class="author-avatar"><img src="https://picsum.photos/50/50?random=20" alt="Linus Torvalds"></div>
+            <div>
+              <span class="author-name">Linus Torvalds</span>
+              <span class="post-date">Oct 24, 2026</span>
+            </div>
+          </div>
+          <a href="404.html" class="btn-primary mt-4" style="display:inline-block">Read Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Category Filter -->
+  <section class="categories" id="cats">
+    <div class="container reveal zoom">
+      <div class="cat-nav">
+        <button class="cat-btn active">All</button>
+        <button class="cat-btn">Cloud</button>
+        <button class="cat-btn">Cybersecurity</button>
+        <button class="cat-btn">Engineering</button>
+        <button class="cat-btn">AI & Data</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Recent Posts -->
+  <section class="recent-posts" id="recent">
+    <div class="container">
+      <h2 class="section-title reveal">Recent Publications</h2>
+      <div class="blog-grid mt-4">
+        <!-- Post 1 -->
+        <article class="blog-post reveal zoom">
+          <img src="https://picsum.photos/600/220?random=15" alt="Serverless 2.0" class="post-img">
+          <div class="post-body">
+            <span class="post-tag">Cloud</span>
+            <h3>Serverless 2.0: What You Need to Know</h3>
+            <p>AWS Lambda updates and the shift towards containerized serverless apps...</p>
+            <div class="meta mt-4">
+              <span class="post-date">Oct 18, 2026</span>
+              <a href="404.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </article>
+        <!-- Post 2 -->
+        <article class="blog-post reveal zoom" style="transition-delay: 0.1s">
+          <img src="https://picsum.photos/600/220?random=16" alt="React Compiler" class="post-img">
+          <div class="post-body">
+            <span class="post-tag">Engineering</span>
+            <h3>React Compiler: The End of useMemo?</h3>
+            <p>Deep dive into the new theoretical React reactivity model causing waves...</p>
+            <div class="meta mt-4">
+              <span class="post-date">Oct 12, 2026</span>
+              <a href="404.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </article>
+        <!-- Post 3 -->
+        <article class="blog-post reveal zoom" style="transition-delay: 0.2s">
+          <img src="https://picsum.photos/600/220?random=17" alt="Zero Trust" class="post-img">
+          <div class="post-body">
+            <span class="post-tag">Cybersecurity</span>
+            <h3>Zero Trust is Not a Product</h3>
+            <p>Why buying software won't magically solve your zero-trust architecture needs...</p>
+            <div class="meta mt-4">
+              <span class="post-date">Oct 05, 2026</span>
+              <a href="404.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Inline Newsletter -->
+
+
+  <!-- 6. Popular / Trending -->
+  <section class="trending" id="trending">
+    <div class="container">
+      <div class="split-layout">
+        <div class="reveal">
+          <h2 class="section-title">Trending This Month</h2>
+          <p class="mb-4">Articles getting the most traction among our engineering community.</p>
+          <div class="trending-list">
+            <a href="404.html" class="trend-item">
+              <span class="trend-num">01</span>
+              <div>
+                <h4>Why We Migrated from GraphQL back to REST</h4>
+                <p>Sep 20, 2026 • 8 min read</p>
+              </div>
+            </a>
+            <a href="404.html" class="trend-item">
+              <span class="trend-num">02</span>
+              <div>
+                <h4>Building a Design System in Figma + React</h4>
+                <p>Sep 15, 2026 • 12 min read</p>
+              </div>
+            </a>
+            <a href="404.html" class="trend-item">
+              <span class="trend-num">03</span>
+              <div>
+                <h4>PostgreSQL Performance Tuning for 10M+ Rows</h4>
+                <p>Aug 28, 2026 • 15 min read</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="trending-visual reveal zoom">
+          <img src="https://picsum.photos/600/400?random=19" alt="Trending articles visual" class="t-vis-box">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Author Spotlight -->
+  <section class="author-spotlight" id="author">
+    <div class="container text-center reveal">
+      <span class="section-subtitle">Author Spotlight</span>
+      <h2 class="section-title">Meet Our Top Contributor</h2>
+      <div class="author-card glass-card mt-4">
+        <img src="assets/per1.webp" alt="Ada Lovelace" class="lg-avatar">
+        <h3>Ada Lovelace</h3>
+        <p class="role">Head of Data Science / Lead Researcher</p>
+        <p class="bio">Ada has published over 50 technical papers on AI optimization algorithms and frequently speaks at global tech summits.</p>
+        <a href="404.html" class="btn-outline mt-4" style="display:inline-block">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Video / Podcast -->
+  <section class="media-section bg-alt" id="media">
+    <div class="container reveal">
+      <div class="text-center mb-4">
+        <h2 class="section-title">ITMeet Tech Talk Podcast</h2>
+        <p>Listen to our engineers discuss the hardest problems they solved this week.</p>
+      </div>
+      <div class="video-player glass-card reveal zoom">
+        <a href="404.html" class="play-btn">▶</a>
+        <div class="video-info">Episode 42: Scaling Real-Time Websockets</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Upcoming Tech Events -->
+  <section class="events" id="events">
+    <div class="container reveal">
+      <h2 class="section-title">Upcoming Webinars & Events</h2>
+      <div class="event-list mt-4">
+        <div class="event-card glass-card">
+          <div class="date-box"><span>NOV</span>15</div>
+          <div class="event-info">
+            <h3>Cloud Architecture Summit 2026</h3>
+            <p>Live virtual event detailing next-gen cloud infra.</p>
+          </div>
+          <a href="#" class="btn-outline">Register Free</a>
+        </div>
+        <div class="event-card glass-card">
+          <div class="date-box"><span>DEC</span>02</div>
+          <div class="event-info">
+            <h3>Cyber Security Bootcamp</h3>
+            <p>Hands-on session on identifying network vulnerabilities.</p>
+          </div>
+          <a href="#" class="btn-outline">Register Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Explore More (Pagination/CTA) -->
+  <section class="explore-more" id="explore">
+    <div class="container text-center reveal zoom">
+      <div class="pagination">
+        <button class="page-btn" disabled>&larr; Prev</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">Next &rarr;</button>
+      </div>
+      <div class="search-container mt-4">
+        <p>Looking for a specific topic?</p>
+        <div class="search-box">
+          <input type="text" placeholder="Search articles...">
+          <button class="btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+        <a href="index.html" class="logo">
+        <img src="assets/stack logo.png" alt="logo">
+      </a>
+          <p>Your strategic partner in navigating the complexities of modern technology.We build architectures that last.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul class="footer-links">
+             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+             <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li><a href="404.html">Privacy Policy</a></li>
+            <li><a href="404.html">Terms of Service</a></li>
+             <li><a href="404.html">cookie policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" placeholder="Email Address" required>
+            <button class="btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 ITMeet. All rights reserved.</div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

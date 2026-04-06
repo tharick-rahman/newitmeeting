@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Portal - ITMeet</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dash-body employee-theme">
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Sidebar Overlay for Mobile -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="index.html" class="logo">ITMeet Portal</a>
+      <button class="close-sidebar" id="closeSidebar">&times;</button>
+    </div>
+    
+    <div class="user-profile mb-4">
+      <div class="avatar online emp-avatar">E</div>
+      <div class="user-info">
+        <h4>Emily Chen</h4>
+        <p>Frontend Engineer</p>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="404.html" class="active"><span class="icon">🏠</span> My Workspace</a></li>
+        <li><a href="404.html"><span class="icon">📅</span> Meetings</a></li>
+        <li><a href="404.html"><span class="icon">📋</span> Tasks</a></li>
+        <li><a href="404.html"><span class="icon">👤</span> Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="login.html" class="btn-outline w-100 text-center border-teal color-teal"><span class="icon">🚪</span> Logout</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Topbar -->
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="topbar-search">
+        <input type="text" placeholder="Search tasks, docs...">
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn">🔔</button>
+        <a href="index.html" class="profile-link">
+          <div class="avatar emp-avatar">E</div>
+        </a>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-wrap reveal">
+      <div class="dash-header mb-4">
+        <h1>Welcome, Emily!</h1>
+        <p>You have 3 meetings and 5 tasks pending today.</p>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="stats-grid mt-4 mb-4" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="stat-card glass-card border-teal">
+          <div class="stat-top"><h4>Tasks Completed</h4><span class="icon text-teal">✅</span></div>
+          <h2>24</h2><p class="trend positive">This week</p>
+        </div>
+        <div class="stat-card glass-card border-teal">
+          <div class="stat-top"><h4>Hours Tracked</h4><span class="icon text-teal">⏱️</span></div>
+          <h2>32.5h</h2><p class="trend neutral">Out of 40h</p>
+        </div>
+        <div class="stat-card glass-card border-teal">
+          <div class="stat-top"><h4>Upcoming Deadline</h4><span class="icon text-teal">⏰</span></div>
+          <h2>Tomorrow</h2><p class="trend negative">UI Component Library</p>
+        </div>
+      </div>
+
+      <div class="chart-table-grid" style="grid-template-columns: 1fr 1fr;">
+        
+        <!-- Task List -->
+        <div class="dash-panel glass-card">
+          <div class="panel-header">
+            <h3>My Tasks</h3>
+            <button class="btn-primary btn-sm bg-teal">Add Task</button>
+          </div>
+          <ul class="task-list">
+            <li class="task-item">
+              <label class="task-check">
+                <input type="checkbox">
+                <span class="task-label">Refactor global CSS variables</span>
+              </label>
+              <span class="status-badge bg-warning">High</span>
+            </li>
+            <li class="task-item">
+              <label class="task-check">
+                <input type="checkbox" checked>
+                <span class="task-label" style="text-decoration: line-through; opacity: 0.5;">Update React to v19</span>
+              </label>
+              <span class="status-badge bg-success">Done</span>
+            </li>
+            <li class="task-item">
+              <label class="task-check">
+                <input type="checkbox">
+                <span class="task-label">Implement dark mode toggle</span>
+              </label>
+              <span class="status-badge bg-primary-alt">Medium</span>
+            </li>
+            <li class="task-item">
+              <label class="task-check">
+                <input type="checkbox">
+                <span class="task-label">Code Review for PR #402</span>
+              </label>
+              <span class="status-badge bg-warning">High</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Upcoming Meetings -->
+        <div class="dash-panel glass-card">
+          <div class="panel-header">
+            <h3>Today's Meetings</h3>
+            <button class="btn-outline btn-sm color-teal border-teal">Sync Calendar</button>
+          </div>
+          <div class="meeting-list">
+            <div class="meeting-card">
+              <div class="meet-time">10:00<br><span>AM</span></div>
+              <div class="meet-info">
+                <h4>Daily Standup</h4>
+                <p>Frontend Team</p>
+                <div class="meet-avatars">
+                  <div class="avatar sm">E</div>
+                  <div class="avatar sm bg-purple">A</div>
+                  <div class="avatar sm bg-orange">D</div>
+                </div>
+              </div>
+              <a href="#" class="btn-primary btn-sm bg-teal">Join</a>
+            </div>
+            <div class="meeting-card">
+              <div class="meet-time">02:30<br><span>PM</span></div>
+              <div class="meet-info">
+                <h4>Design Sync</h4>
+                <p>UX & Engineering</p>
+                <div class="meet-avatars">
+                  <div class="avatar sm">E</div>
+                  <div class="avatar sm bg-red">S</div>
+                </div>
+              </div>
+              <a href="#" class="btn-primary btn-sm bg-teal">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

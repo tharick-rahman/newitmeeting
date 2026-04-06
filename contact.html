@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ITMeet</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+       <a href="index.html" class="logo">
+        <img src="assets/stack logo.png" alt="logo">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="btn-outline" style="margin-left:10px; padding: 6px 16px;">Login</a>
+        <a href="signup.html" class="btn-primary" style="padding: 6px 16px;">Sign Up</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- 1. Page Header -->
+  <section class="page-header" id="header">
+    <div class="container text-center reveal">
+      <h1>Let's Connect</h1>
+      <p>Our experts are ready to solve your most complex technical challenges.</p>
+    </div>
+  </section>
+
+  <!-- 2. Contact Options Cards -->
+  <section class="contact-options" id="options">
+    <div class="container reveal">
+      <div class="opt-grid">
+        <div class="opt-card glass-card text-center zoom">
+          <div class="opt-icon">📞</div>
+          <h3>Sales Inquiry</h3>
+          <p>Talk to our sales team about enterprise solutions.</p>
+          <a href="tel:+18001234567" class="btn-outline mt-4">+1 (800) 123-4567</a>
+        </div>
+        <div class="opt-card glass-card text-center zoom" style="transition-delay: 0.1s">
+          <div class="opt-icon">🎧</div>
+          <h3>Technical Support</h3>
+          <p>Current clients: get 24/7 dedicated engineering support.</p>
+          <a href="mailto:support@itmeet.com" class="btn-outline mt-4">support@itmeet.com</a>
+        </div>
+        <div class="opt-card glass-card text-center zoom" style="transition-delay: 0.2s">
+          <div class="opt-icon">🏢</div>
+          <h3>Press & Media</h3>
+          <p>For PR inquiries, interviews, and press kits.</p>
+          <a href="mailto:press@itmeet.com" class="btn-outline mt-4">press@itmeet.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Direct Message Form -->
+  <section class="contact-form-sec" id="form">
+    <div class="container">
+      <div class="form-wrapper glass-card reveal">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Send a Direct Message</h2>
+          <p>Fill out the form below and we'll get back to you within 2 hours.</p>
+        </div>
+        <form class="main-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+          <div class="form-row">
+            <div class="input-grp">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="input-grp">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@company.com" required>
+            </div>
+          </div>
+          <div class="form-row mt-4">
+            <div class="input-grp">
+              <label>Company</label>
+              <input type="text" placeholder="Company Name">
+            </div>
+            <div class="input-grp">
+              <label>Inquiry Type</label>
+              <select required>
+                <option value="">Select an option</option>
+                <option value="cloud">Cloud Migration</option>
+                <option value="cyber">Cybersecurity</option>
+                <option value="dev">Custom Software</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-grp mt-4">
+            <label>Project Details</label>
+            <textarea rows="5" placeholder="Tell us about your project goals and scope..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary mt-4 w-100">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Global Offices -->
+  <section class="offices bg-alt" id="offices">
+    <div class="container reveal">
+      <div class="text-center mb-4">
+        <span class="section-subtitle">Locations</span>
+        <h2 class="section-title">Global Headquarters</h2>
+      </div>
+      <div class="office-grid mt-4">
+        <div class="office-card">
+          <img src="https://picsum.photos/seed/sf/400/200" alt="San Francisco Office">
+          <div class="office-info">
+            <h3>Silicon Valley (HQ)</h3>
+            <p>100 Innovation Drive<br>San Francisco, CA 94103</p>
+          </div>
+        </div>
+        <div class="office-card">
+          <img src="https://picsum.photos/seed/london/400/200" alt="London Office">
+          <div class="office-info">
+            <h3>London EMEA</h3>
+            <p>10 Tech Square<br>London, UK EC1V 2NX</p>
+          </div>
+        </div>
+        <div class="office-card">
+          <img src="https://picsum.photos/seed/singapore/400/200" alt="Singapore Office">
+          <div class="office-info">
+            <h3>Singapore APAC</h3>
+            <p>8 Marina View<br>Singapore 018960</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Support SLA -->
+  <section class="sla" id="sla">
+    <div class="container text-center reveal zoom">
+      <div class="sla-box glass-card">
+        <h2>Unmatched Response Times</h2>
+        <div class="sla-stats mt-4">
+          <div class="sla-item">
+            <div class="sla-num">2 HR</div><p>Standard Ticket</p>
+          </div>
+          <div class="sla-item">
+            <div class="sla-num">15 MIN</div><p>Critical Severity</p>
+          </div>
+          <div class="sla-item">
+            <div class="sla-num">24/7</div><p>Help Desk Operation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FAQ Snippet (Contact) -->
+  <section class="faq-contact" id="faq">
+    <div class="container reveal">
+      <div class="split-layout">
+        <div>
+          <h2 class="section-title">Before you ask...</h2>
+          <p>Check out our quick answers for common onboarding questions.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h4>Do you offer free consultations?</h4>
+            <p>Yes, the initial 45-minute architectural strategy session is completely free.</p>
+          </div>
+          <div class="faq-item mt-4">
+            <h4>Can we sign an NDA before discussing details?</h4>
+            <p>Absolutely. We prioritize your IP and can execute NDAs immediately upon request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Social Connect -->
+  <section class="socials bg-alt" id="socials">
+    <div class="container text-center reveal">
+      <h2 class="section-title">Follow Our Journey</h2>
+      <div class="social-flex mt-4">
+        <a href="#" class="social-btn">LinkedIn</a>
+        <a href="#" class="social-btn">Twitter / X</a>
+        <a href="#" class="social-btn">GitHub</a>
+        <a href="#" class="social-btn">YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Live Chat Promo -->
+  <section class="live-chat" id="chat">
+    <div class="container reveal zoom">
+      <div class="chat-banner">
+        <div>
+          <h2>Need immediate answers?</h2>
+          <p>Our engineers are online right now to chat with you.</p>
+        </div>
+        <button class="btn-primary" onclick="alert('Opening Live Chat window...')">Start Live Chat</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Embedded Map -->
+  <section class="map-sec" id="map">
+    <div class="container reveal">
+      <div class="map-container">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-170.0%2C-55.0%2C170.0%2C70.0&amp;layer=mapnik" loading="lazy" title="ITMeet global office locations" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Feedback Survey -->
+  <section class="feedback" id="feedback">
+    <div class="container text-center reveal">
+      <h2 class="section-title">How are we doing?</h2>
+      <p>We constantly strive to improve. Let us know how your experience was navigating our platform.</p>
+      <a href="#" class="btn-outline mt-4" style="display:inline-block">Take 1-Min Survey</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+         <a href="index.html" class="logo">
+        <img src="assets/stack logo.png" alt="logo">
+      </a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="blog.html">Blog</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3><ul class="footer-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" placeholder="Email Address" required>
+            <button class="btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 ITMeet. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
