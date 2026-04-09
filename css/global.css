@@ -225,6 +225,43 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 20px;
 }
 
+.footer-social {
+  margin-top: 16px;
+}
+
+.footer-social p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 .footer-links li {
   margin-bottom: 12px;
 }
